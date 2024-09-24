@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipie Hunt</title>
+</head>
+<body>
+    <header>
+        <h1>Recipie Hunter</h1>
+        <h3>Go to Food finder</h3>
+    </header>
+    <section>
+        <div class="input-box">
+            <form action="/submit" method="POST">
+                <input type="text" name="foodSearch" class="search" placeholder="eg. momo">
+                <input type="submit" class="btn" value="Search">
+            </form>
+            
+            
+        </form>
+        </div>
+        <div class="output-box">
+            <div class="output">
+
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+          
+        }
+        body{
+            background-color: #7899D4;
+        }
+        header{
+            height: 5vw;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        section{
+            height: 85svh;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+          
+        }
+        .input-box{
+            height: 100%;
+            width: 50%;
+           
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+
+        }
+        .input-box form{
+            display: flex;
+            justify-content: center;
+        }
+        .input-box .search{
+            padding: 15px;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+            height: 7vh;
+            width: 50vh;
+            height: 7vh;
+            border-right: 0px;
+
+        }
+        .input-box .btn{
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            border-left: 0px;
+            height: 7vh;
+            width: 10vh;
+            margin: 0;
+            padding: 5px;
+
+            
+        }
+        .input-box .btn:hover{
+            cursor: grab;
+        }
+        .output-box{
+            height: 100%;
+            width: 50%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+
+          
+        }
+        .output{
+            height: 90%;
+            width: 90%;
+            border: 0.5px solid black;
+            overflow: scroll;
+            overflow-x: inherit;
+            overflow-y: scroll;
+        }
+    </style>
+</body>
+</html>
